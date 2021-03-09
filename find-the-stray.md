@@ -8,11 +8,11 @@ const stray = (numbers) => {
     return numDetails
   }, {})
   
-  const numberKey = Object.keys(numOccurrances).find(numKey => {
-    return numOccurrances[numKey] === 1
+  const strayNum = Object.keys(numOccurrances).find(num => {
+    return numOccurrances[num] === 1
   })
   
-  return parseInt(numberKey)
+  return parseInt(strayNum)
 }
 
 stray([1, 1, 2])
