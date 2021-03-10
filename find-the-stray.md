@@ -6,13 +6,13 @@ You are given an odd-length array of integers, in which all of them are the same
 ## My Solution:
 ```javascript
 const findStray = (numbers) => {
-  const numOccurrances = numbers.reduce((numDetails, num) => {
+  const numOfOccurrances = numbers.reduce((numDetails, num) => {
     !numDetails[num] ? numDetails[num] = 1 : numDetails[num] += 1
     return numDetails
   }, {})
   
-  const strayNum = Object.keys(numOccurrances).find(num => {
-    return numOccurrances[num] === 1
+  const strayNum = Object.keys(numOfOccurrances).find(num => {
+    return numOfOccurrances[num] === 1
   })
   
   return parseInt(strayNum)
