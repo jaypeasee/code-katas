@@ -7,19 +7,19 @@ Given n, take the sum of the digits of n. If that value has more than one digit,
 
 ## My Solution:
 ```javascript
-function digital_root(n) {
-  if (n > 9) {
-    const total = n.toString().split('').reduce((sum, num) => {
-      sum += parseInt(num)
+function getDigitalRoot(number) {
+  if (number > 9) {
+    const total = number.toString().split('').reduce((sum, digit) => {
+      sum += parseInt(digit)
       return sum
     }, 0)
-    return digital_root(total)
+    return getDigitalRoot(total)
   } else {
-    return n
+    return number
   }
 }
 
-digital_root(16)
+getDigitalRoot(16)
 ```
 
 
