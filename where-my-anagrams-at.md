@@ -5,16 +5,16 @@ Two words are anagrams of each other if they both contain the same letters. Writ
 
 ## My Solution:
 ```javascript
-const anagrams = (word, words) => {
-  return words.filter(wordToEval => {
-    return alphabetizeString(wordToEval) === alphabetizeString(word)
+const findAnagrams = (wordToCompare, possibleAnagrams) => {
+  return possibleAnagrams.filter(word => {
+    return alphabetizeString(word) === alphabetizeString(wordToCompare)
   })
 }
 
-const alphabetizeString = (wordToSort) => {
-    return wordToSort.split('').sort().join('')
+const alphabetizeString = (word) => {
+    return word.split('').sort().join('')
 }
 
-anagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer'])
+findAnagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer'])
 ```
 
