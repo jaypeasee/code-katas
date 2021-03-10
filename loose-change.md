@@ -1,5 +1,9 @@
 # Loose Change
 
+## Details:
+* <b>Level:</b> 7
+* [Code Wars Kata](https://www.codewars.com/kata/5571f712ddf00b54420000ee)
+
 ## The Brief:
 Create a function that takes an amount of US currency in cents, and returns a dictionary/hash which shows the least amount of coins used to make up that amount. The only coin denominations considered in this exercise are: Pennies (1¢), Nickels (5¢), Dimes (10¢) and Quarters (25¢). Therefor the dictionary returned should contain exactly 4 key/value pairs.
 

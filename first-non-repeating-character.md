@@ -1,4 +1,8 @@
-# First Non-Repeating Characterr
+# First Non-Repeating Character
+
+## Details:
+* <b>Level</b>: 5
+* [Code Wars Kata](https://www.codewars.com/kata/52bc74d4ac05d0945d00054e)
 
 ## The Brief:
 Write a function that takes a string input, and returns the first character that is not repeated anywhere in the string.
