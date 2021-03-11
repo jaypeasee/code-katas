@@ -1,4 +1,4 @@
-# Persistence Bugger
+# Persistent Bugger
 
 ## Details:
 * <b>Level:</b> 6
