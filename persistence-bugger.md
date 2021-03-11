@@ -11,9 +11,9 @@ Write a function that takes in a positive parameter num and returns its multipli
 ```javascript
 const calculateRounds = (num, rounds = 0) => {
   if (num > 9) {
-    const numsMultiplied = num.toString().split('').reduce((outcome, num) => {
-      outcome = outcome * num
-      return outcome
+    const numsMultiplied = num.toString().split('').reduce((product, num) => {
+      product *= num
+      return product
     }, 1)
     return calculateRounds(numsMultiplied, rounds + 1)
   } else {
