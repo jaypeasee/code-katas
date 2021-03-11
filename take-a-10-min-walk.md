@@ -14,14 +14,14 @@ Create a function that will return true if the walk the app gives you will take 
 ## My Solution:
 ```javascript
 const checkValidWalk = (directions) => {
-  const walkCoordinates = directions.reduce((totals, direction) => {
+  const directionTotals = directions.reduce((totals, direction) => {
     !totals[direction] ? totals[direction] = 1 : totals[direction] +=1
     return totals
   }, {})
-  if (directions.length === 10 && walkCoordinates.n === walkCoordinates.s 
-      && (walkCoordinates.w === walkCoordinates.e || 
-      walkCoordinates.w - walkCoordinates.e === 3 || 
-      walkCoordinates.e - walkCoordinates.w === 3)) {
+  if (directions.length === 10 && directionTotals.n === directionTotals.s 
+      && (directionTotals.w === directionTotals.e || 
+      directionTotals.w - directionTotals.e === 3 || 
+      directionTotals.e - directionTotals.w === 3)) {
     return true
   }
   return false
