@@ -4,7 +4,6 @@
 * Level: 6
 * [Code Wars Kata](https://www.codewars.com/kata/541c8630095125aba6000c00)
 
->>>>>>> a97faea5b3cf9d3cdb119044441d50762efc9d93
 ## The Brief:
 Digital root is the recursive sum of all the digits in a number.
 
