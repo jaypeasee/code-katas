@@ -1,7 +1,7 @@
 # IQ Test
 
 ## Details:
-* <b>Level:</> 6
+* <b>Level:</b> 6
 * [Code Wars Kata](https://www.codewars.com/kata/552c028c030765286c00007d/javascript)
 
 ## The Breif:
