@@ -10,8 +10,8 @@ Write a function that accepts a single string parameter and replaces all the vow
 ```javascript
 const vowelMunger = (phrase) => {
   const vowels = ['a','e','i','o','u']
+  const letters = phrase.split('')
   let updatedLetters = []
-  let letters = phrase.split('')
   for (let i = 0; i < letters.length; i++) {
     if (vowels.includes(letters[i].toLowerCase())) {
       updatedLetters.push([i + 1].toString())
