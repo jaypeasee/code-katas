@@ -6,7 +6,7 @@ This was a code challenge I received in an interview.
 ## Brief:
 Write a function that accepts a single string parameter and replaces all the vowels [a,e,i,o,u] with their respective positions within that string. Consider the string 1-indexed, IE, the first position in the string is position 1
 
-## My Solution
+## My Solution:
 ```javascript
 const vowelMunger = (phrase) => {
   const vowels = ['a','e','i','o','u']
