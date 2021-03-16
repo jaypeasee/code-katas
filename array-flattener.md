@@ -4,7 +4,7 @@
 This was a code challenge assigned at Turing in Mod 4.
 
 ## Brief:
-Create a function with the input of an array, will always return a non nested array. Some inputs may have arrays within arrays. You must do this without any built in methods, such as `.flat().` It must also be solved using recursion.
+Create a function with the input of an array, will always return a non nested array. Some inputs may have arrays within arrays. You must do this without any built in methods, such as `.flat()`. It must also be solved using recursion.
 
 ## My Solution:
 ```javascript
