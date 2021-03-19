@@ -15,14 +15,14 @@ const findMaxMinAvg = (string) => {
     return num2 - num1
   })
   
-  const sum = sortedNums.reduce((total, num) => {
-    total += parseInt(num)
-    return total
+  const total = sortedNums.reduce((sum, num) => {
+    sum += parseInt(num)
+    return sum
   }, 0)
   
   minMaxAvg.push(parseInt(sortedNums[0]))
   minMaxAvg.push(parseInt(sortedNums[sortedNums.length - 1]))
-  minMaxAvg.push(Math.round(sum / sortedNums.length))
+  minMaxAvg.push(Math.round(total / sortedNums.length))
   return minMaxAvg
 }
                                                       
